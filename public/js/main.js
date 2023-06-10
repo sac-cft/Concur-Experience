@@ -187,7 +187,7 @@ function doSomeThing() {
   img.style.display = 'none'
   counter++
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 // On Video End
 myFunction = () =>  {
@@ -210,62 +210,62 @@ myFunction = () =>  {
 function goReplay() {
   counter
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 // For Go To Previous Video
 goBack = () => {
   counter--
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 
 goFirst = () => {
   counter = 1
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 goSecond = () => {
   counter = 2
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 goThird = () => {
   counter = 11
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 goFour = () => {
   counter = 15
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 goFive = () => {
   counter = 16
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 goSix = () => {
   counter = 25
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 goSeven = () => {
   counter = 28
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 goEight = () => {
   counter = 31
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 goNine = () => {
   counter = 33
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
 goTen = () => {
   counter = 34
   hideButtons()
-  video.src = `/public/new/${counter}.mp4`;
+  video.src = `./public/new/${counter}.mp4`;
 }
