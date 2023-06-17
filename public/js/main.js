@@ -55,7 +55,7 @@ if (counter == 2) {
   if(counter == 4){
     button4.style.paddingRight = '4vw';
     button4.style.top = '76%';
-    button4.style.left = '5%';
+    button4.style.left = '6%';
   }
   if(counter == 5){
     button4.style.paddingBottom = '4vw'

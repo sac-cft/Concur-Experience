@@ -201,8 +201,7 @@ b{
   width: 430px;
   height: 100vh;
   margin: -100px 0 0 -50px;
-  padding: 20px;
-  padding-top: 125px;
+  padding-top: 100px;
   text-align: left;
   background: #ededed;
   list-style-type: none;
@@ -214,7 +213,7 @@ b{
 
 #menu li
 {
-  padding: 25px 0 25px 25px;
+  padding: 15px 0 25px 25px;
   font-size: 1em;
   letter-spacing: 2px;
   font-weight: bold;
@@ -236,7 +235,7 @@ b{
   }
 
   #button4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border: none;
   position: absolute;
   top: 50%;
@@ -267,7 +266,7 @@ b{
   } */
 
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #button3 {
       padding-left: 0.1em;
       font-size: 3em;
@@ -281,7 +280,7 @@ b{
       font-size: 0.8rem;
     }
     #button {
-      font-size: .8em;
+      font-size: 1em;
       padding:.8em;
     }
     #button5 {
@@ -312,7 +311,66 @@ b{
       -webkit-touch-callout: none;
     }
     img{
-      height: 80px;
       width: 400px;
+      height: 100px;
+      position: absolute;
+      right: 0%;
+      bottom:-4%;
+      z-index: 1000;
+    }
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+
+    #button3 {
+      padding-left: 0.1em;
+      font-size: 3em;
+    }
+    #button2 {
+      font-size: 2em;
+      bottom: 6px;
+      left: 1.5em;
+    }
+    #button4 {
+      font-size: 0.8rem;
+    }
+    #button {
+      font-size: 1em;
+      padding:.8em;
+    }
+    #button5 {
+      width: 80px;
+      padding: 10px;
+      font-size: .8em;
+    }
+    #menu li{
+      padding: 12px 0 12px 12px;
+      font-size: .5em;
+    }
+    #menu
+    {
+      width: 250px;
+      height: 100vh;
+      margin: -100px 0 0 -50px;
+      padding: 12px;
+      padding-top: 115px;
+    }
+    #menuToggle input
+    {
+      width: 30px;
+      height: 22px;
+      position: absolute;
+      top: -3px;
+      left: -5px;
+      z-index: 2;
+      -webkit-touch-callout: none;
+    }
+    img{
+      width: 400px;
+      height: 100px;
+      position: absolute;
+      right: 0%;
+      bottom:-4%;
+      z-index: 1000;
     }
   }
