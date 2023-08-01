@@ -14,8 +14,8 @@ console.log(checkboxdiv);
 let checkbox = checkboxdiv.getElementsByClassName("checkBox");
 console.log(checkbox[0]);
 
-checkboxdiv.addEventListener("click",()=>{
-    checkbox[0].checked= !checkbox[0].checked;
+checkboxdiv.addEventListener("click", () => {
+    checkbox[0].checked = !checkbox[0].checked;
 });
 
 
@@ -36,8 +36,8 @@ for (let index = 1; index <= 24; index++) {
 
 
 let buttonPosition = {
-    "video1": ["top-[44%]","custom:top-[45%]", "left-[48%]", "custom3:top-[45%]", "transform", "-translate-x-1/2", "-translate-y-1/2"],
-    "video2": ["top-[44%]","custom:top-[45%]", "left-[48%]", "custom3:top-[45%]", "transform", "-translate-x-1/2", "-translate-y-1/2"],
+    "video1": ["top-[44%]", "custom:top-[45%]", "left-[48%]", "custom3:top-[45%]", "transform", "-translate-x-1/2", "-translate-y-1/2"],
+    "video2": ["top-[44%]", "custom:top-[45%]", "left-[48%]", "custom3:top-[45%]", "transform", "-translate-x-1/2", "-translate-y-1/2"],
 
 }
 
@@ -64,16 +64,16 @@ function startVideo() {
     img.style.display = 'none';
     hideButtons();
     counter++;
-    video.src = `/public/video/${counter}.mp4`;
+    video.src = `./public/video/${counter}.mp4`;
 }
 
 var eventListenerAttached = false;
 
 video.addEventListener("click", function () {
-    if (video.currentTime> video.duration-6) {
+    if (video.currentTime > video.duration - 6) {
         startVideo()
     }
-    else{
+    else {
         console.log("video not ended")
     }
 });
@@ -85,8 +85,8 @@ function videoEnd() {
     }
     rewindButton.style.display = 'block';
     if (buttons.hasOwnProperty(`button${counter}`)) {
-        var replayPosition= video.duration-5;
-        video.currentTime=replayPosition;
+        var replayPosition = video.duration - 5;
+        video.currentTime = replayPosition;
         video.play();
         //buttons[`button${counter}`].style.display = 'block';
     }
